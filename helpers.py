@@ -6,5 +6,5 @@ def binary_to_decimal(binary: str) -> int:
 
 def import_input(file_name: str) -> str:
     """Reads a file and returns its content."""
-    with open(f"./inputs/{file_name}.txt", encoding="utf-8") as f:
+    with open(f"./inputs/{str(file_name)}.txt", encoding="utf-8") as f:
         return f.read().splitlines();
