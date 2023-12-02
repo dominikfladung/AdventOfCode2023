@@ -58,7 +58,7 @@ class PuzzleTemplateGenerator:
 
     def request_soup(self, day):
         """requests the soup of the website"""
-        url = f"https://adventofcode.com/2023python/day/{day}"
+        url = f"https://adventofcode.com/2023/day/{day}"
         response = requests.get(url, timeout=5)
 
         # Check if the request was successful
@@ -70,7 +70,7 @@ class PuzzleTemplateGenerator:
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        input_day = 3
+        input_day = 2
     else:
         input_day = sys.argv[1]
 
